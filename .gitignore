@@ -1,0 +1,10 @@
+npm-debug.log
+node_modules
+.project
+.vscode
+.history
+.DS_Store
+.Archive/
+.cache
+dist
+plan

@@ -1,0 +1,40 @@
+.home-product {
+    margin-bottom: 20px;
+}
+
+.home-product-content ul {
+    margin-top: 5px;
+}
+
+.home-product-content {
+    padding-bottom: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    /* font-family: PingFang SC, PingFang TC, Helvetica Neue, Helvetica, Roboto, Arial, Hiragino Sans GB, Microsoft Yahei, Microsoft Jhenghei, sans-serif; */
+    font-family: "等线", "dengxian", "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "YaHei Consolas Hybrid", "STHeiti", "Microsoft Yahei", sans-serif;
+}
+
+.intro-content>p,
+.product-link p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.product-title {
+    font-size: 18px;
+}
+
+.product-title {
+    color: #3B7AF1;
+    font-weight: 600;
+}
+
+.home-company {
+    font-size: 14pt;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, .5)
+}
