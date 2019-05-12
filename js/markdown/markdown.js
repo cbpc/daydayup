@@ -138,7 +138,7 @@
         'mg'
       ),
       horizontalSeparatorRegex = new RegExp(options.separator);
-
+    console.log(markdown.split(separatorRegex));
     var matches,
       lastIndex = 0,
       isHorizontal,
