@@ -131,14 +131,14 @@
    */
   function slidify(markdown, options) {
     options = getSlidifyOptions(options);
-    console.log(options, markdown);
+    // console.log(options, markdown);
     var separatorRegex = new RegExp(
         options.separator +
           (options.verticalSeparator ? '|' + options.verticalSeparator : ''),
         'mg'
       ),
       horizontalSeparatorRegex = new RegExp(options.separator);
-    console.log(markdown.split(separatorRegex));
+    // console.log(markdown.split(separatorRegex));
     var matches,
       lastIndex = 0,
       isHorizontal,
@@ -179,7 +179,7 @@
     );
 
     var markdownSections = '';
-    console.log(sectionStack);
+    // console.log(sectionStack);
     // flatten the hierarchical stack, and insert <section data-markdown> tags
     for (var i = 0, len = sectionStack.length; i < len; i++) {
       // vertical
