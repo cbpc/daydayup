@@ -131,7 +131,7 @@
    */
   function slidify(markdown, options) {
     options = getSlidifyOptions(options);
-
+    console.log(options, markdown);
     var separatorRegex = new RegExp(
         options.separator +
           (options.verticalSeparator ? '|' + options.verticalSeparator : ''),
