@@ -63,8 +63,8 @@ Slide.Control.add('postMessage', function(S, broadcast) {
 
         var sWidth = screen.width,
           sHeight = screen.height,
-          tWidth = sWidth * 0.7,
-          tHeight = sHeight * 0.7;
+          tWidth = Math.min(sWidth, 1583), //0.7,
+          tHeight = Math.min(sHeight, 915); //0.7;
 
         var temp =
           'height=' +

@@ -287,6 +287,35 @@ slides>slide .slide-wrapper img {
     color: #eee;
 }
 
+@media screen and (min-width: 1200px) {
+    .with-notes.popup .note {
+        -moz-transform: translate3d(350px, 1050px, 0) scale(1.5);
+        -ms-transform: translate3d(350px, 1050px, 0) scale(1.5);
+        -webkit-transform: translate3d(350px, 1050px, 0) scale(1.5);
+        transform: translate3d(350px, 1050px, 0) scale(1.5)
+    }
+    .with-notes.popup slide.next {
+        -moz-transform: translate3d(800px, 9px, 0) scale(0.7);
+        -ms-transform: translate3d(800px, 9px, 0) scale(0.7);
+        -webkit-transform: translate3d(800px, 9px, 0) scale(0.7);
+        transform: translate3d(800px, 9px, 0) scale(0.7);
+    }
+}
+
+.with-notes.popup slide {
+    height: 800px;
+}
+
+#_timer_ {
+    display: block;
+    position: fixed;
+    bottom: .5em;
+    left: 3.5em
+}
+
+
+/* 备注 */
+
 aside.notes {
     display: none;
 }
