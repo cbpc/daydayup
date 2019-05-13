@@ -272,3 +272,42 @@ slides>slide .slide-wrapper img {
     height: 100%;
     width: 100%;
 }
+
+.slide.next::after {
+    content: '下一页';
+    position: absolute;
+    bottom: -40px;
+    color: #eee;
+}
+
+.slide.current::after {
+    content: '当前页';
+    position: absolute;
+    bottom: -40px;
+    color: #eee;
+}
+
+aside.notes {
+    display: none;
+}
+
+.with-notes .note,
+.with-notes .notes {
+    display: flex;
+    position: absolute;
+    bottom: -260px;
+    color: #eee;
+    height: 175px;
+}
+
+.with-notes .note::before,
+.with-notes .notes::before {
+    content: '备注';
+    background: #eee;
+    color: #333;
+    padding: 5px;
+    height: 25px;
+    position: absolute;
+    left: -80px;
+    top: 14px;
+}

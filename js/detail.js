@@ -71,6 +71,7 @@ var app = (function() {
       '</div>';
     var print =
       '<div class="theme-info"><a href="/detail.html?file=展望&print-pdf=1" target="_blank">打印为PDF</a></div>';
+
     $('section')
       .first()
       .append(date + str + print);
@@ -104,12 +105,12 @@ var app = (function() {
       requestMethod.apply(element);
     }
   };
-
+  var CONTROL_MODE = location.href.includes('_multiscreen=control');
   var startTimer = function() {
     if (slideStarted === 0) {
       setInterval(clock, 1000);
     }
-    if (!isFullScreen) {
+    if (!isFullScreen && !CONTROL_MODE) {
       enterFullscreen();
       isFullScreen = true;
     }
@@ -125,6 +126,9 @@ var app = (function() {
     var key = event.keyCode;
     // console.log(key + ":" + keyName);
     startTimer();
+    if (CONTROL_MODE) {
+      return;
+    }
     if (key == 27) {
       isFullScreen = false;
     } else if (
